@@ -6,7 +6,7 @@
     <title>Volunteer</title>
 </head>
 <body>
-  <header>
+  <header>  <!-- This is the header with navigation -->
 <h1>Volunteer Form</h1>
 <nav>
     <ul>
@@ -20,6 +20,42 @@
     </ul>
 </nav>
     </header> 
-     
+    <!-- This is the form -->
+    <form>
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname"><br>
+<label for="lname">Surname:</label><br>
+<input type="text" id="lname" name="lname"><br>
+<label for="Email">Email:</label><br>
+<input type="email" id="Email" name="Email"><br>
+<label for="age">Enter your age(no minors):</label><br>
+<input type="number" id="age" name="age" min="18" placeholder="18 or older" required><br>
+<label>Gender:</label><br>
+
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label><br>
+
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br>
+
+  <label for="message">Short motivation essay:</label><br>
+  <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your message here..."></textarea><br>
+
+  <input type="submit" value="Submit"> <input type="reset" value="reset">
+
+
+
+
+
+
+
+
+
+
+
+    </form> 
 </body>
 </html>
